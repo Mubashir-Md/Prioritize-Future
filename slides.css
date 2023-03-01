@@ -1,0 +1,232 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+div.main {
+    /* width: 100%; */
+}
+
+div.main header {
+    display: flex;
+    /* width: 100%; */
+}
+
+div.main header h1 {
+    margin: 1% auto;
+    justify-content: center;
+    display: inline-block;
+    font-size: 8vmin;
+    font-family: 'Charm', cursive;
+    text-shadow: 1px 0.5px rgba(4, 80, 97, 0.821);
+    color: rgb(34, 35, 35);
+    
+    
+    
+}
+
+div.main header button {
+    justify-content: flex-end;
+    /* width: 10%; */
+    border-radius: 30%;
+    padding: 0 1%;
+    border: 1px solid black;
+    margin: 1% 1%;
+    display: none;
+    background-color: yellowgreen;
+}
+
+div.main h2.head2 {
+    text-align: center;
+    padding: 1% 2% 0 2%;
+    margin: 0.5% auto 2% auto;
+    width: 80%;
+    color: rgb(8, 8, 67);
+    text-shadow: 0.2px 0.2px rgb(1, 13, 67);
+    font-size: 4.5vmin;
+    /* font-family: 'Comic Neue', cursive; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Expletus Sans', cursive;
+}
+
+
+
+div.views{
+    text-align: center;
+}
+
+div.buttons{
+    text-align: center;
+}
+
+#gridView{
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#slideView{
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+    background-color: aliceblue;
+    font-weight: bold;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+div.whole{
+    width: 100%;
+}
+
+div.fourCells{
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+}
+
+div.big img{
+    /* height: 100vh; */
+    width: 75vw;
+    opacity: 0.8;
+}
+
+
+#default {
+    display: inline-block;
+    text-align: center;
+    background-color: skyblue;
+    padding: 1%;
+    width: 80%;
+}
+
+#default h1{
+    margin: 1%;
+    padding: 1%;
+}
+#default form div.item {
+    color: aliceblue;
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 1% 1% 0 1%;
+}
+
+#default form div.item li {
+    margin: 1% 1% 1% 1.5%;
+    color: black;
+}
+
+#default form div.item input {
+    width: 100%;
+    border-radius: 2%;
+    border: none;
+    font-size: 20px;
+    color: black;
+    caret-color: black;
+    padding:  1%;
+}
+
+#default form div.item input:focus{
+    outline: none;
+}
+
+#default form div.item span.icons {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0% 2%;
+    padding: 0.5%;
+    width: 25%;
+}
+
+#default form div.item span.icons button {
+    width: 20%;
+    background-color: azure;
+    border: none;
+    margin: auto 1%;
+}
+
+#default form div.item span.icons button:hover {
+    background-color: yellow;
+    border-radius: 20%;
+}
+
+#default form div.item span.icons button img {
+    /* height: 100%; */
+    width: 80%;
+    height: 30%;
+    margin: 0%;
+    /* border: 1px solid white; */
+}
+#default div.btn{
+    width: 100%;
+    text-align: center;
+    padding: 1% auto;
+}
+#default button.plus {
+    border: none;
+    background-color: azure;
+    /* margin: 1% auto; */
+}
+
+
+div.fourCells{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+    width: 20%;
+}
+div.fourCells > div h2{
+    margin: 1% auto;
+    padding: 1%;
+    /* color: whitesmoke; */
+    text-align: center;
+    font-size: 4vmin;
+    text-decoration: underline;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+}
+
+div.cell {
+    width: 100%;
+    height: 20vh;
+    overflow-y: auto;
+    margin: 2%;
+    padding: 1%; 
+    cursor: pointer;
+    border-radius: 3%;   
+    background-color: aliceblue;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+div.btn button {
+    display: none;
+}
+
+
+/* footer */
+footer {
+    /* width: 100%; */
+    margin: 1%;
+    padding: 1%;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 4vmin;
+}
+
+
+

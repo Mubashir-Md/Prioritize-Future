@@ -1,0 +1,107 @@
+@media (max-width:500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    div.whole h3{
+        transform: none;
+        text-align: center;
+    }
+    div.main header h1{
+        margin: 2% auto;
+        justify-content: center;
+        width: 85%;
+        display: inline-flex;
+    }
+    div.main h2{
+        text-align: center;
+        padding: 2% 1% 5% 1%;
+        margin: 2% auto;
+        width: 80%;
+        /* color: darkblue; */
+    }
+    div.whole {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.whole>div {
+        margin-bottom: 7%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.whole > div form div.item {
+        color: aliceblue;
+        display: flex;
+        /* border: 2px solid black; */
+        padding: 1%;
+    }
+    div.whole > div form div.item input {
+        width: 90%;
+        border: none;
+        border-radius: 2%;
+        font-size: 1rem;
+        padding: 1%;
+        margin: 1%;
+    }
+    div.whole > div form div.item span.icons{
+        margin: 1%;
+        padding: 1%;
+        width:40%;
+    }
+    div.whole > div form div.item span.icons button{
+        width: 30%;
+        border: none;
+    }
+    
+}
+
+@media (min-width: 501px) and (max-width: 960px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.whole {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    div.whole>div {
+        margin-bottom: 7%;
+    }
+
+    form div.item {
+        color: aliceblue;
+        display: flex;
+        /* border: 2px solid black; */
+        padding: 1%;
+    }
+
+    form div.item span.icons {
+        margin: 1%;
+        padding: 1%;
+        width: 35%;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1300px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.whole {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+}
