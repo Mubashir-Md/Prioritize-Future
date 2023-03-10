@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" id="styler">
+    <link rel="stylesheet" href="responsive-index.css">
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Comic+Neue:wght@400;700&family=Expletus+Sans&family=Merriweather:wght@700&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96aa71b79c.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="dynamic.js" defer></script> -->
+    <script src="after.js" defer></script>
+
+    <title>Prioritize Future</title>
+    <!-- <meta name="color-scheme" content="dark"> -->
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>Prioritize Future</h1>
+            <button>
+                <img src="https://img.icons8.com/ios/40/000000/discord-logo--v1.png" />
+            </button>
+        </header>
+        <h2 class="head2">Feeling procrastinated? We've got your back, prioritize your tasks and do what's important for
+            you and say
+            bye to procrastination.
+        </h2>
+        <!-- Grid view -->
+        <div class="whole" id="all">
+            <div class="cell" id="first">
+                <h2>Do</h2>
+                <!-- <p class="descr">Tasks which are both <b>Important</b> and <b>urgent</b></p> -->
+                <form action="" class="in" id="form1">
+                    <div class="item">
+                        <input type="text" id="inp1" spellcheck="true" class="field" placeholder="Important and urgent tasks">
+
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="save" id="save1">Add Task</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="cell" id="second">
+                <h2>Decide</h2>
+                <!-- <p class="descr">Tasks which are <b>Important</b> but not <b>urgent</b></p> -->
+                <form action="" class="in" id="form2">
+                    <div class="item">
+                        <input type="text" id="inp2" spellcheck="true" class="field" placeholder="Important but not urgent tasks">
+
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="save" id="save2">Add Task</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="cell" id="third">
+                <h2>Delegate</h2>
+                <!-- <p class="descr">Tasks which are <b>Urgent</b> but not <b>important</b></p> -->
+                <form action="" class="in" id="form3">
+                    <div class="item">
+                        <input type="text" id="inp3" spellcheck="true" class="field" placeholder="Urgent but not important tasks">
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="save" id="save3">Add Task</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="cell" id="fourth">
+                <h2>Delete</h2>
+                <!-- <p class="descr">Tasks which are neither <b>Urgent</b> nor <b>important</b></p> -->
+                <form action="" class="in" id="form4">
+                    <div class="item">
+                        <input type="text" id="inp4" spellcheck="true" class="field" placeholder="Neither Important nor urgent tasks">
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="save" id="save4">Add Task</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- display the saved data -->
+    <div class="display">
+        <div class="saved">
+            <header>
+                <h1>Your Tasks list</h1>
+            </header>
+            <div class="data" id="all">
+                <div class="list" id="first">
+                    <h2>Do</h2>
+                    <p class="detail">Tasks which are both <b>Important</b> and <b>urgent</b></p>
+                    <div class="tasks">
+
+                    </div>
+                    <div class="clr">
+                        <button>Clear</button>
+                    </div>
+                </div>
+                <div class="list" id="second">
+                    <h2>Decide</h2>
+                    <p class="detail">Tasks which are <b>Important</b> but not <b>urgent</b></p>
+                    <div class="tasks">
+
+                    </div>
+                    <div class="clr">
+                        <button>Clear</button>
+                    </div>
+                </div>
+                <div class="list" id="third">
+                    <h2>Delegate</h2>
+                    <p class="detail">Tasks which are <b>Urgent</b> but not <b>important</b></p>
+                    <div class="tasks">
+
+                    </div>
+                    <div class="clr">
+                        <button>Clear</button>
+                    </div>
+                </div>
+                <div class="list" id="fourth">
+                    <h2>Delete</h2>
+                    <p class="detail">Tasks which are neither <b>Important</b> nor <b>urgent</b></p>
+                    <div class="tasks">
+
+                    </div>
+                    <div class="clr">
+                        <button>Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3>
+                Made with <span>&#x2764</span> by <a href="https://twitter.com/Mubashir_061"
+                    target="_blank">Mubashir</a>
+            </h3>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    /* background-color: #caf0f8; */
+    color: #03045e;
+}
+div.main {
+    background-color: #caf0f8;
+    width: 100%;
+}
+
+div.main div.saved{
+    background-color: azure;
+
+}
+div.main div.saved div.cell{
+    background-color: #caf0f8;
+}
+
+div.main header {
+    display: flex;
+    width: 100%;
+}
+
+div.main header h1 {
+    margin: 1% auto;
+    justify-content: center;
+    display: inline-block;
+    font-size: 6vmin;
+    /* font-family: 'Charm', cursive; */
+    font-family: 'Merriweather', serif;
+    text-shadow: 1px 0.5px rgba(4, 80, 97, 0.821);
+    
+    
+     
+}
+p.descr{
+    display: none;
+}
+p.detail{
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    font-size: 3vmin;
+}
+div.main header button {
+    justify-content: flex-end;
+    /* width: 10%; */
+    border-radius: 30%;
+    padding: 0 1%;
+    border: 1px solid black;
+    margin: 1% 1%;
+    display: none;
+    background-color: yellowgreen;
+}
+
+div.main h2.head2 {
+    text-align: center;
+    padding: 1% 2% 0 2%;
+    margin: 0.5% auto 2% auto;
+    width: 80%;
+    /* color: rgb(8, 8, 67); */
+    text-shadow: 0.2px 0.2px rgb(1, 13, 67);
+    font-size: 3.8vmin;
+    /* font-family: 'Comic Neue', cursive; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Expletus Sans', cursive;
+}
+
+div.whole {
+    display: block;
+    width: 70%;
+    margin: 1% auto;
+}
+
+div.whole > div h2{
+    /* margin: 1% ; */
+    padding: 1%;
+    /* color: whitesmoke; */
+    text-align: center;
+    font-size: 4vmin;
+    text-decoration: underline;
+    width: 20%;
+    backdrop-filter: blur(3px);
+}
+
+
+div.cell {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: azure;
+    
+}
+
+
+
+div.cell form.in{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+div.cell form div.item{
+    width: 80%;
+}
+div.cell form div.item input {
+    border: none;
+    border-radius: 7px;
+    justify-content: center;
+    font-size: 3.5vmin;
+    caret-color: #03045e;
+    padding: 1.5%;
+    width:100%;
+    background-color: #caf0f8;
+}
+
+
+form.in div.btn{
+    justify-content: flex-end;
+    
+    padding: 1% auto;
+    margin: 1%;
+}
+
+
+div.btn button.save {
+    border-radius: 5px;
+    padding: 2.5%;
+    background-color:#caf0f8;
+    border: #03045e 1.5px solid;
+    font-size: 3vmin;
+    margin: auto auto;
+    display: block;
+
+}
+
+
+div.display{
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    overflow-x: visible;
+}
+div.saved{
+    margin: 1% auto;
+    
+}
+div.saved header{
+    text-align: center;
+}
+div.saved header h1{
+    margin: 1% auto;
+    justify-content: center;
+    display: inline-block;
+    font-size: 6vmin;
+    /* font-family: 'Charm', cursive; */
+    font-family: 'Merriweather', serif;
+    text-shadow: 1px 0.5px rgba(4, 80, 97, 0.821);
+}
+div.saved div.data{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    margin: 1% auto;
+    width: 90%
+    
+}
+
+div.list > h2{
+    margin: 1% auto;
+    padding: 1%;
+    /* color: whitesmoke; */
+    text-align: center;
+    font-size: 4.5vmin;
+    text-decoration: underline;
+    backdrop-filter: blur(3px);
+}
+
+div.list {
+    border-radius: 10px;
+    height: 12em;
+    width: 97%;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: azure;
+    border: #03045e solid 1px;
+}
+
+div.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1%;
+}
+div.item p{
+    width: 90%;
+    font-size: 3.5vmin;
+    color: #03045e;
+    margin: 1%;
+    padding: 1%;
+    /* font-weight: bold; */
+}
+div.item span.icons {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1% 1%;
+    padding: 1% 1%;
+    width: 25%;
+}
+
+div.tasks div.item span.icons button {
+    width: 27%;
+    background-color: azure;
+    border: none;
+    margin: auto 1%;
+}
+
+div.tasks div.item span.icons button:hover {
+    background-color: yellow;
+    border-radius: 20%;
+}
+
+div.tasks div.item span.icons button img {
+    /* height: 100%; */
+    width: 80%;
+    height: 30%;
+    margin: 0%;
+    /* border: 1px solid white; */
+}
+div.clr{
+    text-align: center;
+}
+div.clr button{
+    margin: 1% auto; 
+    padding: 1%;
+    border-radius: 5px;
+    border: #03045e 1.5px solid;
+    background-color:#caf0f8;
+    color: #03045e;
+    font-size: 3vmin;
+
+}
+
+/* footer */
+footer {
+    width: 100%;
+    
+    padding: 1%;
+    /* background-color: azure; */
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 3.5vmin;
+}
