@@ -142,7 +142,7 @@ div.btn button.save {
     font-size: 3vmin;
     margin: auto auto;
     display: block;
-
+    cursor: pointer;
 }
 
 
@@ -193,6 +193,7 @@ div.list {
     padding: 1%;
     background-color: azure;
     border: #03045e solid 1px;
+    
 }
 
 div.item{
@@ -223,6 +224,7 @@ div.tasks div.item span.icons button {
     background-color: azure;
     border: none;
     margin: auto 1%;
+    cursor: pointer;
 }
 
 div.tasks div.item span.icons button:hover {
@@ -248,7 +250,7 @@ div.clr button{
     background-color:#caf0f8;
     color: #03045e;
     font-size: 3vmin;
-
+    cursor: pointer;
 }
 
 /* footer */

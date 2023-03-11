@@ -508,99 +508,98 @@ for (let k = 0; k < save.length; k++) {
                 }
             })
 
-    // accessing parents of particular caller and appending the whole form item into them
-    tasks[k].append(divItem);
+            // accessing parents of particular caller and appending the whole form item into them
+            tasks[k].append(divItem);
 
-    // local storage
-    if (k == 0) {
-        let input1 = document.getElementById("inp1");
-        let tasks = input1.value;
+            // local storage
+            if (k == 0) {
+                let input1 = document.getElementById("inp1");
+                let tasks = input1.value;
 
-        let oldVal = JSON.parse(localStorage.getItem("do")) || [];
+                let oldVal = JSON.parse(localStorage.getItem("do")) || [];
 
-        oldVal.push(tasks);
-        localStorage.setItem("do", JSON.stringify(oldVal)) || [];
-        para.innerHTML = input1.value;
+                oldVal.push(tasks);
+                localStorage.setItem("do", JSON.stringify(oldVal)) || [];
+                para.innerHTML = input1.value;
 
-        input1.value = "";
+                input1.value = "";
 
-        // displaying values in tasks section
-        // getData = JSON.parse(localStorage.getItem("do")) || [];
-
-
-    }
-    else if (k == 1) {
-        let input2 = document.getElementById("inp2");
-        let tasks = input2.value;
-
-        let oldVal = JSON.parse(localStorage.getItem("decide")) || [];
-
-        oldVal.push(tasks);
-        localStorage.setItem("decide", JSON.stringify(oldVal));
+                // displaying values in tasks section
+                // getData = JSON.parse(localStorage.getItem("do")) || [];
 
 
-        // displaying values in tasks section
-        // getData = JSON.parse(localStorage.getItem("decide")) || [];
-        // getData.forEach(element => {
-        para.innerHTML = input2.value;
-        // });
-        input2.value = "";
-    }
-    else if (k == 2) {
-        let input3 = document.getElementById("inp3");
-        let tasks = input3.value;
+            }
+            else if (k == 1) {
+                let input2 = document.getElementById("inp2");
+                let tasks = input2.value;
 
-        let oldVal = JSON.parse(localStorage.getItem("delegate")) || [];
+                let oldVal = JSON.parse(localStorage.getItem("decide")) || [];
 
-        oldVal.push(tasks);
-        localStorage.setItem("delegate", JSON.stringify(oldVal));
-        input3.value = "";
+                oldVal.push(tasks);
+                localStorage.setItem("decide", JSON.stringify(oldVal));
+                para.innerHTML = input2.value;
 
-        // displaying values in tasks section
-        getData = JSON.parse(localStorage.getItem("delegate")) || [];
-        getData.forEach(element => {
-            para.innerHTML = element;
-        });
-    }
-    else {
-        let input4 = document.getElementById("inp4");
-        let tasks = input4.value;
-        let oldVal = JSON.parse(localStorage.getItem("delete"));
-        console.log(typeof oldVal)
-        oldVal.push(tasks);
-        localStorage.setItem("delete", JSON.stringify(oldVal));
-        input4.value = "";
+                input2.value = "";
+            }
+            else if (k == 2) {
+                let input3 = document.getElementById("inp3");
+                let tasks = input3.value;
 
-        // displaying values in tasks section
-        getData = JSON.parse(localStorage.getItem("delete")) || deleteTasks;
-        getData.forEach(element => {
-            para.innerHTML = element;
-        });
-    }
+                let oldVal = JSON.parse(localStorage.getItem("delegate")) || [];
 
-}
+                oldVal.push(tasks);
+                localStorage.setItem("delegate", JSON.stringify(oldVal));
+                input3.value = "";
+
+                // displaying values in tasks section
+                getData = JSON.parse(localStorage.getItem("delegate")) || [];
+                getData.forEach(element => {
+                    para.innerHTML = element;
+                });
+            }
+            else {
+                let input4 = document.getElementById("inp4");
+                let tasks = input4.value;
+                let oldVal = JSON.parse(localStorage.getItem("delete"));
+                console.log(typeof oldVal)
+                oldVal.push(tasks);
+                localStorage.setItem("delete", JSON.stringify(oldVal));
+                input4.value = "";
+
+                // displaying values in tasks section
+                getData = JSON.parse(localStorage.getItem("delete")) || deleteTasks;
+                getData.forEach(element => {
+                    para.innerHTML = element;
+                });
+            }
+
+        }
 
 
     })
 
-clear[k].addEventListener("click", function () {
-    if (k == 0) {
-        localStorage.removeItem("do");
-        window.location.reload(true);
-    }
-    else if (k == 1) {
-        localStorage.removeItem("decide");
-        window.location.reload(true);
-    }
-    else if (k == 2) {
-        localStorage.removeItem("delegate");
-        window.location.reload(true);
-    }
-    else {
-        localStorage.removeItem("delete");
-        window.location.reload(true);
-    }
-})
+    clear[k].addEventListener("click", function () {
+        if (k == 0) {
+            localStorage.removeItem("do");
+            tasks[0].style.display = "none";
+            // window.location.reload(true);
+        }
+        else if (k == 1) {
+            localStorage.removeItem("decide");
+            tasks[1].style.display = "none";
+            // window.location.reload(true);
+        }
+        else if (k == 2) {
+            localStorage.removeItem("delegate");
+            tasks[2].style.display = "none";
+            // window.location.reload(true);
+        }
+        else {
+            localStorage.removeItem("delete");
+            tasks[3].style.display = "none";
+            // window.location.reload(true);
+        }
+    })
 
 }
 
