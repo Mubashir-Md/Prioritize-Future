@@ -15,13 +15,7 @@ div.main {
     width: 100%;
 }
 
-div.main div.saved{
-    background-color: azure;
 
-}
-div.main div.saved div.cell{
-    background-color: #caf0f8;
-}
 
 div.main header {
     display: flex;
@@ -158,7 +152,7 @@ div.display{
 }
 div.saved{
     margin: 1% auto;
-    
+    background-color: azure;
 }
 div.saved header{
     text-align: center;
