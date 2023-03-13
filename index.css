@@ -8,6 +8,7 @@
 body{
     /* background-color: #caf0f8; */
     color: #03045e;
+    font-family: 'Lato', sans-serif;
 }
 div.main {
     background-color: #caf0f8;
@@ -31,9 +32,10 @@ div.main header h1 {
     margin: 1% auto;
     justify-content: center;
     display: inline-block;
-    font-size: 6vmin;
+    font-size: 8vmin;
     /* font-family: 'Charm', cursive; */
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Cinzel', serif;
     text-shadow: 1px 0.5px rgba(4, 80, 97, 0.821);
     
     
@@ -79,13 +81,12 @@ div.whole {
 }
 
 div.whole > div h2{
-    /* margin: 1% ; */
-    padding: 1%;
-    /* color: whitesmoke; */
-    text-align: center;
+    
+    padding: 5px;   
+    text-align: left;
+    align-items: center;
     font-size: 4vmin;
-    text-decoration: underline;
-    width: 20%;
+    width: 15%;
     backdrop-filter: blur(3px);
 }
 
@@ -96,6 +97,7 @@ div.cell {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin: 1% auto;
     padding: 1%;
     background-color: azure;
@@ -112,7 +114,7 @@ div.cell form.in{
     
 }
 div.cell form div.item{
-    width: 80%;
+    width: 90%;
 }
 div.cell form div.item input {
     border: none;
@@ -120,7 +122,7 @@ div.cell form div.item input {
     justify-content: center;
     font-size: 3.5vmin;
     caret-color: #03045e;
-    padding: 1.5%;
+    padding: 10px;
     width:100%;
     background-color: #caf0f8;
 }
@@ -128,15 +130,15 @@ div.cell form div.item input {
 
 form.in div.btn{
     justify-content: flex-end;
+    padding: 10px;
     
-    padding: 1% auto;
-    margin: 1%;
 }
 
 
 div.btn button.save {
     border-radius: 5px;
-    padding: 2.5%;
+    width: 90px;
+    padding: 10px 5px;
     background-color:#caf0f8;
     border: #03045e 1.5px solid;
     font-size: 3vmin;
@@ -144,7 +146,10 @@ div.btn button.save {
     display: block;
     cursor: pointer;
 }
-
+div.btn button.save:hover{
+    background-color: #03045e;
+    color: #caf0f8;
+}
 
 div.display{
     /* height: 100vh; */
@@ -164,25 +169,29 @@ div.saved header h1{
     display: inline-block;
     font-size: 6vmin;
     /* font-family: 'Charm', cursive; */
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
     text-shadow: 1px 0.5px rgba(4, 80, 97, 0.821);
 }
 div.saved div.data{
     display: grid;
     grid-template-columns: 48% 48%;
+    justify-content:center;
     margin: 1% auto;
     width: 90%
     
 }
 
 div.list > h2{
-    margin: 1% auto;
+    /* margin: 1% auto; */
     padding: 1%;
-    /* color: whitesmoke; */
+    /* border-bottom: 1px solid gray; */
     text-align: center;
     font-size: 4.5vmin;
-    text-decoration: underline;
-    backdrop-filter: blur(3px);
+    text-decoration: underline; 
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 div.list {
@@ -191,7 +200,7 @@ div.list {
     width: 97%;
     margin: 1% auto;
     padding: 1%;
-    background-color: azure;
+    background-color:#caf0f8;
     border: #03045e solid 1px;
     
 }
@@ -202,10 +211,12 @@ div.item{
     align-items: center;
     justify-content: space-around;
     margin: 1%;
+    background-color: #f2f9fa;
+    border-radius: 6px;
 }
 div.item p{
     width: 90%;
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     color: #03045e;
     margin: 1%;
     padding: 1%;
@@ -213,9 +224,11 @@ div.item p{
 }
 div.item span.icons {
     justify-content: flex-end;
-    align-items: center;
+    align-items:flex-end;
+    align-self: flex-start;
     margin: 1% 1%;
-    padding: 1% 1%;
+    height: 100%;
+    padding: 1%;
     width: 25%;
 }
 
@@ -244,13 +257,17 @@ div.clr{
 }
 div.clr button{
     margin: 1% auto; 
-    padding: 1%;
+    padding: 5px 10px;
     border-radius: 5px;
     border: #03045e 1.5px solid;
     background-color:#caf0f8;
     color: #03045e;
     font-size: 3vmin;
     cursor: pointer;
+}
+div.clr button:hover{
+    background-color: #03045e;
+    color: #caf0f8;
 }
 
 /* footer */

@@ -1,27 +1,30 @@
-@media (max-width:500px) {
+@media (max-width:560px) {
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
-    div.main{
-        
-    }
-    div.whole{
+
+    
+    div.whole {
         width: 100%;
 
     }
-    div.saved h3{
+
+    div.saved h3 {
         transform: none;
         text-align: center;
     }
-    div.main header h1{
+
+    div.main header h1 {
         margin: 1% auto;
         justify-content: center;
-        width: 85%;
+        width: 95%;
+        font-size: 6vmin;
         text-align: center;
     }
-    div.main h2{
+
+    div.main h2 {
         text-align: center;
         padding: 2% 1% 5% 1%;
         margin: 2% auto;
@@ -29,34 +32,37 @@
         /* color: darkblue; */
     }
 
-    div.cell{
+    div.cell {
         width: 90%;
         height: 35vmin;
         display: block;
         overflow-y: hidden;
     }
-    p.descr{
+
+    p.descr {
         display: block;
         font-size: 3vmin;
         text-align: center;
     }
-    p.detail{
+
+    p.detail {
         display: block;
         font-size: 3vmin;
         text-align: center;
     }
-    
-    div.cell form.in{
+
+    div.cell form.in {
         display: block;
         width: 100%;
     }
-    
-    div.cell form div.item{
+
+    div.cell form div.item {
         width: 100%;
         margin: 2%;
 
     }
-    div.cell form div.item input{
+
+    div.cell form div.item input {
         width: 90%;
         border-radius: 7px;
         border: none;
@@ -67,7 +73,7 @@
         padding: 1.5%;
         background-color: #caf0f8;
     }
-    
+
     div.list {
         border-radius: 10px;
         height: 10em;
@@ -77,70 +83,156 @@
         background-color: azure;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
-    from.in div.btn{
+
+    from.in div.btn {
         text-align: center;
 
 
     }
+
     div.btn button.save {
         border-radius: 5px;
         padding: 2%;
         background-color: azure;
         margin: 1% auto;
         display: block;
-    
+
     }
-    
-    div.saved div.data{
+
+    div.saved div.data {
         display: block;
         margin: 1% auto;
         width: 90%
-    
     }
-    div.item{
+
+    div.item {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    div.item p{
+
+    div.item p {
         width: 70%;
-        font-size: 14px;
+        /* font-size: 14px; */
         color: #03045e;
         /* font-weight: bold; */
     }
+
     div.item span.icons {
         justify-content: flex-end;
         align-items: center;
-        margin: 1% ;
+        margin: 1%;
         padding: 1%;
-        width: 30%;
+        width: 20%;
     }
-    
+
     div.tasks div.item span.icons button {
         width: 30%;
         background-color: azure;
         border: none;
         margin: auto 1%;
     }
-    
-   
+
+
 }
 
-@media (min-width: 501px) and (max-width: 960px) {
+@media (min-width: 561px) and (max-width: 960px) {
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
 
-    div.saved {
+    div.whole {
         display: block;
-        width: 85%;
-        margin: 0 auto;
+        width: 95%;
+        margin: 1% auto;
     }
 
-    div.saved>div {
-        margin-bottom: 7%;
+    div.whole>div h2 {
+        /* margin: 1% ; */
+        padding: 1%;
+        /* color: whitesmoke; */
+        text-align: center;
+        font-size: 4vmin;
+        
+        width: 20%;
+        backdrop-filter: blur(3px);
+    }
+
+    div.cell {
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1% auto;
+        padding: 1%;
+        background-color: azure;
+
+    }
+
+
+
+    div.cell form.in {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    div.cell form div.item {
+        width: 80%;
+    }
+
+    div.cell form div.item input {
+        border: none;
+        border-radius: 7px;
+        justify-content: left;
+        align-items: center;
+        font-size: 3.5vmin;
+        caret-color: #03045e;
+        padding: 1.5%;
+        width: 100%;
+        background-color: #caf0f8;
+    }
+
+
+    form.in div.btn {
+        justify-content: flex-end;
+
+        padding: 1% auto;
+        margin: 1%;
+    }
+
+
+    div.btn button.save {
+        border-radius: 5px;
+        padding: 2.5%;
+        background-color: #caf0f8;
+        border: #03045e 1.5px solid;
+        font-size: 3vmin;
+        margin: auto auto;
+        display: block;
+        cursor: pointer;
+    }
+
+
+
+    div.saved {
+        /* display: block; */
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    div.saved div.data {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        justify-content: center;
+        align-items: center;
+        margin: 1% auto;
+        width: 100%
     }
 
     form div.item {
@@ -156,6 +248,3 @@
         width: 35%;
     }
 }
-
-
-

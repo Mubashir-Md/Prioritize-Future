@@ -22,7 +22,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
 
 
         let list = document.createElement('li');
-        list.style.listStyleType = 'disc';
+        list.style.listStyleType = 'none';
         list.style.fontSize = '1.5rem';
         divItem.appendChild(list);
 
@@ -120,7 +120,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
 
 
         let list = document.createElement('li');
-        list.style.listStyleType = 'disc';
+        list.style.listStyleType = "none";
         list.style.fontSize = '1.5rem';
         divItem.appendChild(list);
 
@@ -215,7 +215,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
 
 
         let list = document.createElement('li');
-        list.style.listStyleType = 'disc';
+        list.style.listStyleType = 'none';
         list.style.fontSize = '1.5rem';
         divItem.appendChild(list);
 
@@ -310,7 +310,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
 
 
         let list = document.createElement('li');
-        list.style.listStyleType = 'disc';
+        list.style.listStyleType = 'none';
         list.style.fontSize = '1.5rem';
         divItem.appendChild(list);
 
@@ -406,7 +406,7 @@ for (let k = 0; k < save.length; k++) {
             divItem.setAttribute('class', 'item');
 
             let list = document.createElement('li');
-            list.style.listStyleType = 'disc';
+            list.style.listStyleType = 'none';
             // list.style.fontSize = '1.5rem';
             divItem.appendChild(list);
 
