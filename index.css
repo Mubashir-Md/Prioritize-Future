@@ -58,7 +58,7 @@ div.main header button {
     border: 1px solid black;
     margin: 1% 1%;
     display: none;
-    background-color: yellowgreen;
+    
 }
 
 div.main h2.head2 {
@@ -201,7 +201,7 @@ div.list {
     margin: 1% auto;
     padding: 1%;
     background-color:#caf0f8;
-    border: #03045e solid 1px;
+    /* border: #03045e solid 1px; */
     
 }
 
@@ -273,7 +273,9 @@ div.clr button:hover{
 /* footer */
 footer {
     width: 100%;
-    
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
     padding: 1%;
     /* background-color: azure; */
 }
