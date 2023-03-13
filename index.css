@@ -20,17 +20,18 @@ div.main {
 div.main header {
     display: flex;
     width: 100%;
+    padding: 2px 20px;
 }
 
 div.main header h1 {
-    margin: 1% auto;
+    margin: 10px auto;
     justify-content: center;
     display: inline-block;
-    font-size: 8vmin;
+    font-size: 7vmin;
     /* font-family: 'Charm', cursive; */
-    /* font-family: 'Merriweather', serif; */
-    font-family: 'Cinzel', serif;
-    text-shadow: 1px 0.5px rgba(4, 80, 97, 0.821);
+    font-family: 'Merriweather', serif;
+    /* font-family: 'Cinzel', serif; */
+    text-shadow: 1px 0.5px rgba(8, 21, 23, 0.821);
     
     
      

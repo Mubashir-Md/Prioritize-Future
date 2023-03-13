@@ -10,6 +10,10 @@
         width: 100%;
 
     }
+    div.whole > div h2{
+        width: 100%;
+        text-align: center;
+    }
 
     div.saved h3 {
         transform: none;
@@ -24,7 +28,7 @@
         text-align: center;
     }
 
-    div.main h2 {
+    div.main h2.head2 {
         text-align: center;
         padding: 2% 1% 5% 1%;
         margin: 2% auto;
