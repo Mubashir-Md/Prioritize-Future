@@ -222,18 +222,18 @@
 
 
     div.saved {
-        /* display: block; */
+        display: block;
         width: 100%;
         margin: 1% auto;
     }
 
     div.saved div.data {
-        display: grid;
-        grid-template-columns: 49% 49%;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        /* grid-template-columns: 49% 49%; */
+        /* justify-content: center; */
+        /* align-items: center; */
         margin: 1% auto;
-        width: 100%
+        width: 90%
     }
 
     form div.item {

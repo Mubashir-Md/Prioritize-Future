@@ -149,10 +149,11 @@ div.display{
     /* height: 100vh; */
     /* overflow: hidden; */
     overflow-x: visible;
+    background-color: azure;
 }
 div.saved{
     margin: 1% auto;
-    background-color: azure;
+    
 }
 div.saved header{
     text-align: center;
