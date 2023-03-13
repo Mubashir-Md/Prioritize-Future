@@ -80,8 +80,8 @@
         width: 90%;
         margin: 1% auto;
         padding: 2%;
-        background-color: azure;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        background-color:#caf0f8;
+        /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     }
 
     from.in div.btn {
@@ -109,6 +109,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        background-color: #f2f9fa;
     }
 
     div.item p {
