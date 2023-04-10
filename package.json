@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "canvas2image": "^1.0.5",
+    "html2canvas": "^1.4.1"
+  }
+}

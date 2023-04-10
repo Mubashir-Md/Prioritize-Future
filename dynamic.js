@@ -1,3 +1,4 @@
+
 // getting new input field on clicking plus button
 let save = document.getElementsByClassName('save');
 let fields = document.getElementsByClassName('field');
@@ -623,6 +624,28 @@ for (let k = 0; k < save.length; k++) {
 
 }
 
+
+let ss = document.getElementById("ss");
+ss.addEventListener("click", () => {
+    ss.style.backgroundColor = "#03045e";
+    ss.style.color = "#caf0f8";
+    html2canvas(document.getElementById("tasks-page"), {
+        // width : 1000,
+        // height : 1000,
+        logging: true,
+        letterRendering: 1,
+        allowTaint: true,
+        useCORS: true
+    }).then((canvas) => {
+        // document.body.appendChild(canvas);
+        let image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
+
+        let link = document.createElement('a');
+        link.download = "my-image.png";
+        link.href = image;
+        link.click();
+    })
+})
 
 
 
