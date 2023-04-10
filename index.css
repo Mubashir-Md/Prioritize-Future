@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -10,9 +11,68 @@ body{
     color: #03045e;
     font-family: 'Lato', sans-serif;
 }
+div.home{
+    width: 100%;
+    
+}
+div.home img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    /* opacity: 0.5; */
+    position: relative;
+}
+div.home nav{
+    /* opacity: 1; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    color: #caf0f8;
+}
+nav span{
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+nav span h1{
+    font-size: 1.5rem;
+    /* width: 50%; */
+}
+nav div.links{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+div.links a{
+    text-decoration: none;
+    color: #caf0f8;
+}
+
+div.overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: #caf0f8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+
 div.main {
     background-color: #caf0f8;
     width: 100%;
+    position: relative;
 }
 
 
@@ -80,7 +140,7 @@ div.whole > div h2{
     padding: 5px;   
     text-align: left;
     align-items: center;
-    font-size: 4vmin;
+    font-size: 3vmin;
     width: 15%;
     backdrop-filter: blur(3px);
 }
@@ -126,7 +186,7 @@ div.cell form div.item input {
 form.in div.btn{
     justify-content: flex-end;
     padding: 10px;
-    
+    max-width: 100%;
 }
 
 
@@ -136,7 +196,7 @@ div.btn button.save {
     padding: 10px 5px;
     background-color:#caf0f8;
     border: #03045e 1.5px solid;
-    font-size: 3vmin;
+    font-size: 2vmin;
     margin: auto auto;
     display: block;
     cursor: pointer;

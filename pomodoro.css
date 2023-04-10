@@ -1,0 +1,33 @@
+div.clock{
+  width: 40vw;
+  height: 40vh;
+  margin: auto;
+  background-color: #caf0f8;
+  border: 2px black solid;
+  border-radius: 500px;
+  position: relative;
+}
+
+div.hour, div.minute, div.second{
+  position: absolute;
+  background-color: black;
+}
+
+div.hour{
+  width: 1.8%;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+}
+div.minute{
+  width: 1.6%;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+}
+div.second{
+  width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.25%;
+}

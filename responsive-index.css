@@ -8,11 +8,12 @@
     
     div.whole {
         width: 100%;
-
+        margin-bottom: 7%;
     }
     div.whole > div h2{
         width: 100%;
         text-align: center;
+        font-size: 3vmin;
     }
 
     div.saved h3 {
@@ -37,8 +38,9 @@
     }
 
     div.cell {
+        margin-bottom: 2%;
         width: 90%;
-        height: 35vmin;
+        height: 36vmin;
         display: block;
         overflow-y: hidden;
     }
@@ -71,27 +73,27 @@
         border-radius: 7px;
         border: none;
 
-        /* font-size: 18px; */
+        font-size: 14px;
         /* color: black; */
         caret-color: #03045e;
-        padding: 1.5%;
+        padding: 3%;
         background-color: #caf0f8;
     }
 
     div.list {
         border-radius: 10px;
         height: 10em;
-        width: 90%;
+        width: 100%;
         margin: 1% auto;
         padding: 2%;
         background-color:#caf0f8;
         /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     }
-
+    div.list>h2{
+        font-size: 3.3vmin;
+    }
     form.in div.btn {
         text-align: center;
-
-
     }
 
     div.btn button.save {
@@ -100,7 +102,11 @@
         background-color: azure;
         margin: 1% auto;
         display: block;
+        font-size: 3vmin;
+    }
 
+    div.saved header h1{
+        margin: 5%;
     }
 
     div.saved div.data {
@@ -118,7 +124,7 @@
 
     div.item p {
         width: 70%;
-        /* font-size: 14px; */
+        font-size: 15px;
         color: #03045e;
         /* font-weight: bold; */
     }
@@ -128,7 +134,7 @@
         align-items: center;
         margin: 1%;
         padding: 1%;
-        width: 20%;
+        width: 25%;
     }
 
     div.tasks div.item span.icons button {
@@ -159,7 +165,7 @@
         padding: 1%;
         /* color: whitesmoke; */
         text-align: center;
-        font-size: 4vmin;
+        font-size: 3vmin;
         
         width: 20%;
         backdrop-filter: blur(3px);
@@ -207,17 +213,17 @@
     form.in div.btn {
         justify-content: flex-end;
 
-        padding: 1% auto;
+        padding: 1% ;
         margin: 1%;
     }
 
 
     div.btn button.save {
         border-radius: 5px;
-        padding: 2.5%;
+        padding: 7px;
         background-color: #caf0f8;
         border: #03045e 1.5px solid;
-        font-size: 3vmin;
+        font-size: 2vmin;
         margin: auto auto;
         display: block;
         cursor: pointer;
@@ -273,7 +279,7 @@
         padding: 1%;
         /* color: whitesmoke; */
         text-align: center;
-        font-size: 4vmin;
+        font-size: 3vmin;
         
         width: 20%;
         backdrop-filter: blur(3px);
@@ -330,7 +336,7 @@
         padding: 2.5%;
         background-color: #caf0f8;
         border: #03045e 1.5px solid;
-        font-size: 3vmin;
+        font-size: 2vmin;
         margin: auto auto;
         display: block;
         cursor: pointer;

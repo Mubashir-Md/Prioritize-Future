@@ -56,21 +56,25 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
         spanIcons.appendChild(btn3);
 
         let img1 = document.createElement('img');
-        img1.setAttribute('src', 'https://img.icons8.com/ios-filled/50/000000/double-tick.png');
+        img1.setAttribute('src', "https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-media-neu-music-neu-royyan-wijaya.png");
         btn1.appendChild(img1);
         // adding event litener to button 1
-        btn1.addEventListener('click', function cvt() {
-            if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
-                img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
-                // disabling input text once written and clicked tick button
-                para.style.textDecoration = "line-through";
+        btn1.addEventListener('click', (event) => {
+            // if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
+            //     img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
+            //     // disabling input text once written and clicked tick button
+            //     para.style.textDecoration = "line-through";
 
-            }
-            else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
-                img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
+            // }
+            // else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
+            //     img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
 
-                para.style.textDecoration = null;
-            }
+            //     para.style.textDecoration = null;
+            // }
+
+            console.log(event.target.parentElement.previousSibling.innerText);
+            // window.location.href='pomodoro.html'
+
         }
         );
 
@@ -106,7 +110,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
             val = JSON.parse(localStorage.getItem("do"))
             val.splice(id, 1);
             localStorage.setItem("do", JSON.stringify(val));
-            divItem.style.display = "none";
+            divItem.remove();
         })
 
         // accessing parents of particular caller and appending the whole form item into them
@@ -154,21 +158,22 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
         spanIcons.appendChild(btn3);
 
         let img1 = document.createElement('img');
-        img1.setAttribute('src', 'https://img.icons8.com/ios-filled/50/000000/double-tick.png');
+        img1.setAttribute('src', "https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-media-neu-music-neu-royyan-wijaya.png")
         btn1.appendChild(img1);
         // adding event litener to button 1
-        btn1.addEventListener('click', function cvt() {
-            if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
-                img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
-                // disabling input text once written and clicked tick button
-                para.style.textDecoration = "line-through";
+        btn1.addEventListener('click', () => {
+            // if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
+            //     img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
+            //     // disabling input text once written and clicked tick button
+            //     para.style.textDecoration = "line-through";
 
-            }
-            else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
-                img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
+            // }
+            // else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
+            //     img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
 
-                para.style.textDecoration = null;
-            }
+            //     para.style.textDecoration = null;
+            // }
+            // window.location.href='pomodoro.html'
         }
         );
 
@@ -200,7 +205,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
             val = JSON.parse(localStorage.getItem("decide"))
             val.splice(id, 1);
             localStorage.setItem("decide", JSON.stringify(val));
-            divItem.style.display = "none";
+            divItem.remove();
         })
 
         // accessing parents of particular caller and appending the whole form item into them
@@ -249,21 +254,22 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
         spanIcons.appendChild(btn3);
 
         let img1 = document.createElement('img');
-        img1.setAttribute('src', 'https://img.icons8.com/ios-filled/50/000000/double-tick.png');
+        img1.setAttribute('src', "https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-media-neu-music-neu-royyan-wijaya.png");
         btn1.appendChild(img1);
         // adding event litener to button 1
-        btn1.addEventListener('click', function cvt() {
-            if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
-                img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
-                // disabling input text once written and clicked tick button
-                para.style.textDecoration = "line-through";
+        btn1.addEventListener('click', () => {
+            // if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
+            //     img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
+            //     // disabling input text once written and clicked tick button
+            //     para.style.textDecoration = "line-through";
 
-            }
-            else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
-                img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
+            // }
+            // else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
+            //     img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
 
-                para.style.textDecoration = null;
-            }
+            //     para.style.textDecoration = null;
+            // }
+            // window.location.href='pomodoro.html'
         }
         );
 
@@ -296,7 +302,7 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
             val.splice(id, 1);
             localStorage.setItem("delegate", JSON.stringify(val));
             console.log("In delegate")
-            divItem.style.display = "none";
+            divItem.remove();
         })
 
         // accessing parents of particular caller and appending the whole form item into them
@@ -344,21 +350,23 @@ const showTasks = (doTasks, decideTasks, delegateTasks, deleteTasks) => {
         spanIcons.appendChild(btn3);
 
         let img1 = document.createElement('img');
-        img1.setAttribute('src', 'https://img.icons8.com/ios-filled/50/000000/double-tick.png');
+        img1.setAttribute('src', "https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-media-neu-music-neu-royyan-wijaya.png")
         btn1.appendChild(img1);
         // adding event litener to button 1
-        btn1.addEventListener('click', function cvt() {
-            if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
-                img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
-                // disabling input text once written and clicked tick button
-                para.style.textDecoration = "line-through";
+        btn1.addEventListener('click', () => {
+            // if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
+            //     img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
+            //     // disabling input text once written and clicked tick button
+            //     para.style.textDecoration = "line-through";
 
-            }
-            else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
-                img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
+            // }
+            // else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
+            //     img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
 
-                para.style.textDecoration = null;
-            }
+            //     para.style.textDecoration = null;
+            // }
+            // window.location.href='pomodoro.html'
+
         }
         );
 
@@ -437,21 +445,22 @@ for (let k = 0; k < save.length; k++) {
             spanIcons.appendChild(btn3);
 
             let img1 = document.createElement('img');
-            img1.setAttribute('src', 'https://img.icons8.com/ios-filled/50/000000/double-tick.png');
+            img1.setAttribute('src', "https://img.icons8.com/external-neu-royyan-wijaya/32/null/external-media-neu-music-neu-royyan-wijaya.png");
             btn1.appendChild(img1);
             // adding event litener to button 1
-            btn1.addEventListener('click', function cvt() {
-                if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
-                    img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
-                    // disabling input text once written and clicked tick button
-                    para.style.textDecoration = "line-through";
+            btn1.addEventListener('click', () => {
+                // if ((img1.src === 'https://img.icons8.com/ios-filled/50/000000/double-tick.png')) {
+                //     img1.src = 'https://img.icons8.com/ios/50/000000/edit--v1.png';
+                //     // disabling input text once written and clicked tick button
+                //     para.style.textDecoration = "line-through";
 
-                }
-                else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
-                    img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
+                // }
+                // else if (img1.src === 'https://img.icons8.com/ios/50/000000/edit--v1.png') {
+                //     img1.src = 'https://img.icons8.com/ios-filled/50/000000/double-tick.png';
 
-                    para.style.textDecoration = null;
-                }
+                //     para.style.textDecoration = null;
+                // }
+                // window.location.href='pomodoro.html'
             }
             );
 
@@ -483,28 +492,28 @@ for (let k = 0; k < save.length; k++) {
                     val = JSON.parse(localStorage.getItem("do"))
                     val.splice(id, 1);
                     localStorage.setItem("do", JSON.stringify(val));
-                    divItem.style.display = "none";
+                    divItem.remove();
                 }
                 if (k == 1) {
                     id = para.innerHTML;
                     val = JSON.parse(localStorage.getItem("decide"))
                     val.splice(id, 1);
                     localStorage.setItem("decide", JSON.stringify(val));
-                    divItem.style.display = "none";
+                    divItem.remove();
                 }
                 if (k == 2) {
                     id = para.innerHTML;
                     val = JSON.parse(localStorage.getItem("delegate"))
                     val.splice(id, 1);
                     localStorage.setItem("delegate", JSON.stringify(val));
-                    divItem.style.display = "none";
+                    divItem.remove();
                 }
                 if (k == 3) {
                     id = para.innerHTML;
                     val = JSON.parse(localStorage.getItem("delete"))
                     val.splice(id, 1);
                     localStorage.setItem("delete", JSON.stringify(val));
-                    divItem.style.display = "none";
+                    divItem.remove();
                 }
             })
 
@@ -525,7 +534,10 @@ for (let k = 0; k < save.length; k++) {
                 input1.value = "";
 
                 // displaying values in tasks section
-                // getData = JSON.parse(localStorage.getItem("do")) || [];
+                getData = JSON.parse(localStorage.getItem("do")) || [];
+                getData.forEach(element => {
+                    para.innerHTML = element;
+                });
 
 
             }
@@ -540,6 +552,12 @@ for (let k = 0; k < save.length; k++) {
                 para.innerHTML = input2.value;
 
                 input2.value = "";
+
+                // displaying values in tasks section
+                getData = JSON.parse(localStorage.getItem("decide")) || [];
+                getData.forEach(element => {
+                    para.innerHTML = element;
+                });
             }
             else if (k == 2) {
                 let input3 = document.getElementById("inp3");
@@ -578,30 +596,35 @@ for (let k = 0; k < save.length; k++) {
 
     })
 
-    clear[k].addEventListener("click", function () {
-        if (k == 0) {
-            localStorage.removeItem("do");
-            tasks[0].style.display = "none";
-            // window.location.reload(true);
-        }
-        else if (k == 1) {
-            localStorage.removeItem("decide");
-            tasks[1].style.display = "none";
-            // window.location.reload(true);
-        }
-        else if (k == 2) {
-            localStorage.removeItem("delegate");
-            tasks[2].style.display = "none";
-            // window.location.reload(true);
-        }
-        else {
-            localStorage.removeItem("delete");
-            tasks[3].style.display = "none";
-            // window.location.reload(true);
-        }
-    })
+    // clear[k].addEventListener("click", function () {
+    //     if (k == 0 && localStorage.key("do") != null && tasks[0] != null) {
+    //         localStorage.removeItem("do");
+    //         tasks[0].remove();
+    //         // window.location.reload(true);
+    //     }
+    //     else if (k == 1 && localStorage.key("decide") != null && tasks[1] != null) {
+    //         localStorage.removeItem("decide");
+    //         tasks[1].remove();
+    //         // window.location.reload(true);
+    //     }
+    //     else if (k == 2 && localStorage.key("delegate") != null && tasks[2]!= null) {
+    //         localStorage.removeItem("delegate");
+    //         tasks[2].remove();
+    //         // window.location.reload(true);
+    //     }
+    //     else {
+    //         localStorage.removeItem("delete");
+    //         tasks[3].remove();
+    //         // window.location.reload(true);
+    //     }
+
+    // })
+
 
 }
+
+
+
 
 
 
